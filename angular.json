@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "xyz",
+      "prefix": "app",
       "schematics": {},
       "architect": {
         "build": {
@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -84,8 +89,22 @@
             ],
             "scripts": [],
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/icon/apple-icon-57x57.png",
+              "src/assets/icon/apple-icon-60x60.png",
+              "src/assets/icon/apple-icon-72x72.png",
+              "src/assets/icon/assets/icon/apple-icon-76x76.png",
+              "src/assets/apple-icon-114x114.png",
+              "src/assets/icon/apple-icon-120x120.png",
+              "src/assets/icon/apple-icon-144x144.png",
+              "src/assets/icon/apple-icon-152x152.png",
+              "src/assets/icon/apple-icon-180x180.png",
+              "src/assets/icon/android-icon-192x192.png",
+              "src/assets/icon/favicon-32x32.png",
+              "src/assets/icon/favicon-96x96.png",
+              "src/assets/icon/favicon-16x16.png",
+              "src/assets/icon/manifest.json",
+              "src/assets/icon/ms-icon-144x144.png"
             ]
           }
         },
